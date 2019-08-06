@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Django - Asynchronous Web Scraping</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h2 id="djangoasynchronouswebscraping">Django - Asynchronous Web Scraping</h2>
+
+        <p>A simple Django project to demonstrate the scraping of a website asynchronously. </p>
+
+        <p><strong>Tools</strong>:</p>
+
+        <ul>
+            <li>Django</li>
+
+            <li>Django Rest Framework</li>
+
+            <li>Heroku</li>
+
+            <li>Celery</li>
+        </ul>
+
+        <p><strong>How this works:</strong></p>
+
+        <ul>
+            <li>User makes a <code>POST</code> request to the API. </li>
+
+            <li>Sends a list of <code>URLs</code> and an <code>Email ID</code> as payload</li>
+
+            <li>The system will then download each <code>URL</code> along with static assets and HTML files,
+                asynchronously
+            </li>
+
+            <li>Compresses the downloaded files and sends an email to the address in the payload</li>
+        </ul>
+    </div>
+</body>
+
+</html>
