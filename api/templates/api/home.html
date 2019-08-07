@@ -14,7 +14,11 @@
     <div class="container">
         <h2 id="djangoasynchronouswebscraping">Django - Asynchronous Web Scraping</h2>
 
-        <p>A simple Django project to demonstrate the scraping of a website asynchronously. </p>
+        <p>A simple Django project to demonstrate the scraping of a website asynchronously.</p>
+
+        <p><strong>Demo:</strong> <a
+                href="https://django-async-web-scraping.herokuapp.com/">https://django-async-web-scraping.herokuapp.com/</a>
+        </p>
 
         <p><strong>Tools</strong>:</p>
 
@@ -24,23 +28,41 @@
             <li>Django Rest Framework</li>
 
             <li>Heroku</li>
-
-            <li>Celery</li>
         </ul>
 
         <p><strong>How this works:</strong></p>
 
         <ul>
-            <li>User makes a <code>POST</code> request to the API. </li>
+            <li>User makes a <code>POST</code> request to the API.</li>
 
             <li>Sends a list of <code>URLs</code> and an <code>Email ID</code> as payload</li>
 
             <li>The system will then download each <code>URL</code> along with static assets and HTML files,
-                asynchronously
-            </li>
+                asynchronously</li>
 
             <li>Compresses the downloaded files and sends an email to the address in the payload</li>
         </ul>
+
+        <p><strong>Routes:</strong></p>
+
+        <ul>
+            <li>Base URL: <code>https://django-async-web-scraping.herokuapp.com/api/v1/</code></li>
+
+            <li>Scrape Request: <code>https://django-async-web-scraping.herokuapp.com/api/v1/scrape/</code></li>
+
+            <li>Request Method: <code>POST</code></li>
+
+            <li>Scheme:</li>
+        </ul>
+
+        <pre><code class="json language-json">{
+"urls": [
+"https:/www.google.co.in/",
+"https://www.apple.com/"
+],
+"email": "user@example.com"
+}
+</code></pre>
     </div>
 </body>
 
